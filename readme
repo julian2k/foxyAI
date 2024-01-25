@@ -1,0 +1,6 @@
+To create this project, you will need several files. Here's a reasoning of what they should be:
+1. `requirements.txt`: This file will contain all the necessary libraries and dependencies that your project needs. It's usually the first file to be created because it sets up the environment for the project. In this case, you will need libraries like Streamlit, OpenAI's GPT-3, etc.
+2. `config.py`: This file will contain all the configuration settings for your project. It's important to have this file to manage things like API keys, environment variables, etc.
+3. `gpt3_wrapper.py`: This file will contain the code to interact with the GPT-3 API. It will take the user's input and return the generated lesson plan.
+4. `lesson_material_generator.py`: This file will contain the code to generate the necessary material for the lesson plan. It will use the output from the GPT-3 wrapper to create the material.
+5. `app.py`: This file will contain the Streamlit code to create the web application. It will use the functions from the `gpt3_wrapper.py` and `lesson_material_generator.py` to create the lesson plans and display them to the user.
